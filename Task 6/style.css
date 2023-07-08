@@ -1,0 +1,129 @@
+html{
+    scroll-behavior: smooth;   
+}
+
+body{
+    background: linear-gradient(-45deg, #242582, #2F2FA2, #0C0032, #240090);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+header img{
+    float:left;
+    height:100px;
+    width:100px;
+}
+
+header{
+    color: #F64C72;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2); 
+    background-color:#190061;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.ht{
+    text-align: center;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container-lg{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+
+
+.container__table{
+    color: #282828;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+}
+
+
+table,th,td{
+    color: #Fff;
+    border: none;
+}
+tbody tr{
+    background-color: #282828;
+}
+
+.td_name{
+    background-color: #240090
+}
+
+
+.сontainer__calc{
+    color: #282828;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem; 
+}
+
+
+
+footer{
+    color: #F64C72;
+    background-color:#190061; 
+    height: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+    .ht{
+        font-size:350%;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+
+    .ht{
+        font-size:300%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .ht{
+        font-size:250%;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .ht{
+        font-size:200%;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    .ht{
+        font-size:150%;
+    }
+
+}

@@ -1,0 +1,32 @@
+@media (max-width: 460px) {
+  .popup {
+    width: 275px;
+  }
+
+  .popup input {
+    height: 25px;
+  }
+  
+  
+ .popup-checkbox__text {
+   font-size: 12px;
+  }
+
+ .main-checkbox{
+   width: 15px;
+   height: 15px;
+  }
+.main-checkbox label{
+   width: 15px;
+   height: 15px;
+  }
+
+ .popup .label__text {
+   margin-left: 15px;
+   font-size: 12px;
+   margin-bottom: 3px;
+  }
+
+}
+
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Sidorenko_Laba 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    >
+    <link rel="package" href="package.json">
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <header class="mb-2">
+      <div class="container-lg">
+        <img class="mt-1" src="https://i.gifer.com/av.gif" alt="logo">
+        <div class="ht"><strong>mattakvshi.com</strong></div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container-lg">
+        <ul
+          class=" nav flex-column flex-sm-row justify-content-sm-center text-center">
+          <li class="nav-item">
+            <a class="m-1 nav-link" aria-current="page" href="#task1">Ссылки</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#tablez">Таблица</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#forma">Форма</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#calc">Калькулятор</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="m-2">
+      <div class="container-lg">
+        <div class="container__row d-flex flex-column">
+          <div class="conURLS p-2 bg-light">
+            <h2 class="text-center" id="task1">Список гиперссылок</h2>
+            <ol class = "ol">
+              <li><a href="http://example.com" id="#menu">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+              <li><a href="https://example.com">Абсолютная на главную сайта example.com в протоколе https</a></li>
+              <li>
+                <a href="ftp://public.ftp-servers.example.com/mydirectory/file.zip">Сылка на файл на сервере FTP без авторизации</a>
+              </li>
+              <li>
+                <a href="ftp://user001:secretpassword@private.ftp-servers.example.com/mydirectory/file.zip">Ссылка на файл на сервере FTP с авторизацией</a>
+              </li>
+              <li>
+                <a href="https://mattakvshi.github.io/#back" target="_blank">Ссылка на фрагмент страницы некоторого сайта</a>
+              </li>
+              <li><a href="#“uyut”">Ссылка на фрагмент текущей страницы</a></li>
+              <li>
+                <a href="https://www.example.com?key=Heroes_of_Might__Magic&version=delux" target="_blank">Ссылка с двумя параметрами в URL</a>
+              </li>
+              <li>
+                Навигация
+                <nav>
+                  <ul class = "ol">
+                    <li><a href="#taks1">Ссылка на начало страници</a></li>
+                    <li><a href="#forma">Ссылка на форму</a></li>
+                  </ul>
+                </nav>
+              </li>
+              <li><a>Ссылка без href</a></li>
+              <li><a href="">Ссылка с пустым herf</a></li>
+              <li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+              <li><a href="http://example.com" rel="noindex">Ссылка запрещенную для индексации поисковиками</a></li>
+              <li>
+                <p>
+                  Комфортить - это значит поддерживать человека, делать всё, чтобы он чувствовал себя хорошо, 
+                  в безопасности, для того, чтобы он расслабился и ощутил себя в своей тарелке. Так же это может значить
+                  устраивать уют в помещении, то есть наводить порядок, вешать разные красивые безделушки на стены, включить 
+                  тихую <a href="https://www.youtube.com/watch?v=hFoKgX3IHY4&t=2s">музыку</a>, 
+                  зажечь ароматические свечи, то есть, чтобы у любого, попавшего в эту комнату появилось ощущения спокойствия и комфорта.
+                  
+                </p>
+              </li>
+              <li>
+                <a href="http://example.com" target="_blank"><img class="img-fluid" src="https://i.gifer.com/2iFb.gif" alt="Example"></a>
+              </li>
+              <li>
+                <img
+                  class="img-fluid"
+                  src="https://i.gifer.com/nRq.gif"
+                  usemap="#figuri"
+                  alt="There are 2 selections of the picture area"
+                >
+                <map name="figuri">
+                  <area
+                    shape="rect"
+                    coords="0,0,110,80"
+                    href="http://yandex.ru"
+                    alt="Квадрат"
+                  >
+                  <area
+                    shape="circle"
+                    coords="150,110,50"
+                    href="http://google.com"
+                    alt="Круг"
+                  >
+                </map>
+              </li>
+              <li><a href="lap.html">Ссылка на относительную на страницу в текущем каталоге</a></li>
+              <li><a href="about/about.html">Ссылка на относительную на страницу в каталоге about</a></li>
+              <li><a href="../index.html">Ссылка на относительную на страницу в каталоге уровнем выше текущего</a></li>
+              <li><a href="../../index.html">Ссылка на относительную на страницу в каталоге двумя уровнями выше</a></li>
+              <li><a href="/">Ссылка сокращенная на главную</a></li>
+              <li><a href="/about">Сокращенная ссылку на внутреннюю</a></li>
+            </ol>
+            <p class="ol">
+              <a id="“uyut”"> <strong> Уют </strong></a><br>
+              Пусть взрываются звезды <br>
+              Где-то вдали,– <br>
+              Я об этом не буду знать. <br>
+              Красным соком брызжет <br>
+              Сеньор С. Дали <br>
+              В душ голубую тетрадь. <br>
+              <br>
+              Во мне птицы летят <br>
+              И подлодки плывут,– <br>
+              Я парю между этим и тем. <br>
+              Нагнетая тепло, <br>
+              Дом вплавляет в  уют  <br>
+              Насовсем, насовсем, насовсем. <br>
+            </p>
+          </div>
+          
+          <div class="container__table bg-light p-2 mt-2 order-3 order-sm-2">
+            <h2 class="text-center" id="tablez">Таблица</h2>
+            <table class="table table-bordered border-primary">
+              <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+              </tr>
+              <tr>
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+                <td>Ячейка 13</td>
+              </tr>
+              <tr>
+                <td colspan="2">Ячейка 21 объединенная с 22</td>
+                <td rowspan="2">Ячейка 23 и 33</td>
+              </tr>
+              <tr>
+                <td>Ячейка 31</td>
+                <td>Ячейка 32</td>
+              </tr>
+              <tr>
+                <td>Ячейка 41</td>
+                <td>Ячейка 42</td>
+                <td>Ячейка 43</td>
+              </tr>
+              <tr>
+                <td colspan="3">Ячейка 51 объединенная с 52 и 53</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="container__form p-2 mt-2 order-2 bg-light order-sm-3">
+            <h2 class="text-center" id="forma">Форма</h2>
+            <form action="/" method="POST">
+              <label>
+                Имя<br>
+                <input name="field-name-1" placeholder="Введите имя">
+              </label><br>
+
+              <label>
+                email:<br>
+                <input name="field-email" placeholder="Введите почту" type="email"> 
+              </label><br>
+
+              <label>
+                Дата рождения<br>
+                <input name="field-date" value="2022-02-02" type="date"> 
+              </label><br>
+
+              Пол:<br>
+              <label>
+                <input type="radio" checked="checked"  name="radio-group-2" value="Значение1">
+                Мужской
+              </label><br>
+              
+              <label>
+                <input type="radio" name="radio-group-2" value="Значение2">
+                Женский
+              </label><br>
+
+              Количество конечностей:<br>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                1
+              </label>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+                2
+              </label>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1"  value="Значение3">
+                3
+              </label>
+              <label>
+                <input type="radio" name="radio-group-1" value="Значение4" >
+                4
+              </label><br>
+
+              <label>
+                Сверхспособности: <br>
+                <select name="field-name-4[]" multiple="multiple">
+                  <option value="Значение1">Бессмертие</option>
+                  <option value="Значение2" selected="selected">
+                    Левитация
+                  </option>
+                  <option value="Значение3" selected="selected">
+                    Прохождение сквозь стены
+                  </option>
+                </select> 
+              </label><br>
+
+              <label>
+                Биография: <br>
+                <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px"> Напишите что-то о себе</textarea>
+              </label><br>
+              
+              <label> <input type="checkbox" checked="checked" name="check-1"> с контрактом ознакомлен (а)</label><br>
+              
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+        <div class="сontainer__calc p-2 mt-2 bg-light">
+            <h2 class="text-center" id="calc">Калькулятор</h2>
+            <div class="boarding">
+              <input type="text" name="n1" placeholder="Количество" />
+              <input type="text" name="n2" placeholder="Цена" />
+            </div>
+            <button class="floating-button" id="proiz" onclick="proiz()">
+              ИТОГО
+            </button>
+            <hr />
+            <p id="out">Результат:</p>
+          </div>
+      </div>
+    </section>
+    <footer class="container_fluid d-flex justify-content-center align-items-center"> Сидоренко Максим 2022</footer>
+  </body>
+</html>

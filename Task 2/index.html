@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Web №2</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="header_solo">
+				<div id="logo"></div>
+				<div id="name">
+					<h1 class="text_header">Enginegroes inc.</h1>
+				</div>
+			</div>
+		</header>
+
+		<nav class="menu">
+			<ul class="ul">
+				<li class = "li"><a href=#123 class ="a"><strong>Задание 1</strong></a></li>
+				<li><a class ="a">|</a></li>
+				<li class = "li"><a href=#345 class ="a"><strong>Форма</strong></a></li>
+				<li><a class ="a">|</a></li>
+                <li class = "li"><a href=#234 class ="a"><strong>Таблица</strong></a></li>
+			</ul>
+		</nav>
+
+		<h1 id="123" class="text_h" >List of hyperlinks</h1>
+		<ul class="ul2">
+			<li><a href="http://example.com" id="#menu" class ="a">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+			<li><a href="https://example.com" class ="a">Абсолютная на главную сайта example.com в протоколе https</a></li>
+			<li><a href="ftp://public.ftp-servers.example.com/mydirectory/file.zip" class ="a">Сылка на файл на сервере FTP без авторизации</a></li>
+			<li><a href="ftp://user001:secretpassword@private.ftp-servers.example.com/mydirectory/file.zip" class ="a">Ссылка на файл на сервере FTP с авторизацией</a></li>
+			<li><a href="https://kozinalexandr.github.io/Yolo/#back" target="_blank" class ="a">Ссылка на фрагмент страницы некоторого сайта</a></li>
+			<li><a href="#“dolor”" class ="a">Ссылка на фрагмент текущей страницы</a></li>
+			<li><a href="https://www.example.com?key=Heroes_of_Might__Magic&version=delux" target="_blank" class ="a">Ссылка с двумя параметрами в URL</a></li>
+			<li><a href="#task1" title="Первая часть задания" class ="a">Ссылка на начало</a></li>
+			<li><a href="#forma" title="Вторая часть задания" class ="a">Ссылка на форму</a></li>
+			<li><a style = "color: #FAAFCA">Ссылка без href</a></li>
+			<li><a href="" class ="a">Ссылка с пустым href</a></li>
+			<li><a href="http://example.com" rel = "nofollow" class ="a">Ссылка, по которой запрещен переход поисковикам</a></li>
+			<li><a href="http://example.com" rel = "noindex" class ="a">Ссылка запрещенную для индексации поисковиками</a></li>
+			<li><p style = "color: #FAAFCA">Lorem Ipsum is simply dummy text of the printing and typesetting  <a href="http://commodi.com" class ="a">industry</a>. </p></li>
+			<li><a href="http://example.com" target="_blank"><img src="image.gif" width="50" height="50" alt="Example"></a></li>
+			<li>
+				<img src = "image.gif" id="img" usemap = "#figuri" alt = "There are 2 selections of the picture area">
+				<map name = "figuri">
+					<area shape = "rect" coords = "0,0,110,80" href = "http://yandex.ru" alt = "Квадрат">
+					<area shape = "circle" coords = "150,110,50" href = "http://google.com" alt = "Круг">
+				</map>
+			</li>
+			<li><a href="lap.html" class ="a">Ссылка на относительную на страницу в текущем каталоге</a></li>
+			<li><a href="about/about.html" class ="a">Ссылка на относительную на страницу в каталоге about</a></li>
+			<li><a href="../index.html" class ="a">Ссылка на относительную на страницу в каталоге уровнем выше текущего</a></li>
+			<li><a href="../../index.html" class ="a">Ссылка на относительную на страницу в каталоге двумя уровнями выше</a></li>
+			<li><a href="/" class ="a">Ссылка сокращенная на главную</a></li>
+			<li><a href="/about" class ="a">Сокращенная ссылку на внутреннюю</a></li>
+		</ul>
+	
+        <h1 id = "345" class="text_h"> Form </h1>
+		    <form class = "form">
+	
+			    <label>
+				    Введите имя<br>
+				    <input name="field-name-1" value="mattakvshi">
+			    </label><br>
+	
+			    <label>
+				    Введите email:<br>
+				    <input name="field-email" value="ytube9504@example.com" type="email">
+			    </label><br>
+	
+			    <label>
+				    Введите дату рождения<br>
+				    <input name="field-date" value="2003-04-26" type="date">
+			    </label><br>
+	
+			    Введите пол:<br>
+			    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+				    Мужской</label><br>
+			    <label><input type="radio" name="radio-group-1" value="Значение2">
+				    Женский</label><br>
+	
+			    Выберите кол-во конечностей:<br>
+			    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+				    1</label>
+			    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+				    2</label>
+			    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+				    3</label>
+			    <label><input type="radio" name="radio-group-1" value="Значение4">
+				    4</label>
+			    <label><input type="radio" name="radio-group-1" value="Значениие 5">
+				    Больше 4х</label><br>
+	
+			    <label>
+				    Сверхспособности:
+				    <br>
+				    <select name="field-name-4[]" multiple="multiple">
+					    <option value="Значение1">Бессмертие</option>
+					    <option value="Значение2" selected="selected">Левитация</option>
+					    <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
+				    </select>
+			    </label><br>
+	
+			    <label>
+				    Биография:
+				    <br>
+				    <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
+			    </label><br>
+	
+			    <label><input type="checkbox" checked="checked" name="check-1">
+				    с контрактом ознакомлен (а)</label><br>
+	
+			    <input type="submit" value="Отправить">
+		    </form>
+
+		<h1 id="234" class="text_h">Table</h1>
+                <table>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 11</td>
+                        <td>Ячейка 12</td>
+                        <td>Ячейка 13</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 21 объединенная с 22</td>
+                        <td rowspan="2">Ячейка 23 и 33</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td>Ячейка 32</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td>
+                        <td>Ячейка 43</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Ячейка 51 объединенная с 52 и 53</td>
+                    </tr>
+                </table>
+				<footer class ="text_color">(c) Sidorenko  Maksim  Vitalevich  2022</footer>
+	</body>
+</html>

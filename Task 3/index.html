@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Sidorenko_laba3</title>
+</head>
+
+<body>
+    <header class="header">
+            <div class="content-head">
+                <div id="logo"> <img src="https://i.gifer.com/YGg6.gif" width="100" height="100" /> </div>
+                <h1 class="header__text">VPOPIHAH.COM </h1>
+
+            </div>  
+    </header>
+
+    <nav>
+        <div class="content">
+            <ul class="menu">
+                <li><a href=#task1>Ссылки</a></li>
+                <li><a href=#table>Таблица</a></li>
+                <li><a href=#form>Форма</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div class="container-flex">
+                <div class="content-of-body">
+                    <h2 id="task1">Ссылки:</h2>
+                    <a id="comeback"></a>
+                        <ol>     
+                            <li><a href="http://example.com">Абсолютная гиперссылкa на главную страницу сайта example.com </a></li>
+                            <li><a href="https://example.com">Абсолютная на главную сайта example.com в протоколе https </a></li>
+                            <li><a href="ftp://google.com/fallout/file1.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
+                            <li><a href="ftp://test:password@admin.ru/data/file2.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                            <li><a href="combo.html#lyrics" target="_blank">Ссылку на фрагмент страницы некоторого сайт</a></li>  
+                            <li><a href="#“twice”">Ссылка на фрагмент текущей страницы</a></li>
+                            <li><a href="https://www.onlinestore.ru?product=t-shitt&color=white" target="_blank">Ссылка с двумя параметрами в URL</a></li>
+                            <li>
+                                <p>Навигация</p>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#task1" title="task">Ссылки</a></li> 
+                                        <li><a href="#form" title="form">Форма</a></li>
+                                    </ul>
+                                </nav>
+                            </li>
+                            <li><a>Ссылка без "href"</a></li>
+                            <li><a href="">Ссылка с пустым "href"</a></li>
+                            <li><a href="http://example.com" rel = "nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+                            <li><a href="http://example.com" rel = "noindex">Запрещенная для индексации поисковиками</a></li>
+                            
+                            <li><p><a id=“Bob”>Bob</a> Здесь можно послушать и успокоиться <a href="https://music.yandex.ru/album/15358644/track/82304736"> here </a> </p></li>
+                            <li><a href="https://www.youtube.com/watch?v=dX3k_QDnzHE" target="_blank"><img src="https://i.gifer.com/6ov.gif" alt="cover"></a></li>
+                            <li>А здесь можно посмотреть и успокоиться
+                            <br>
+                                <img src = "https://i.gifer.com/YC6B.gif" usemap = "#figures" alt = "youtube or yandex music">
+                                <map name = "figures">
+                                    <area shape = "rect" coords = "0,0,210,100" href = "https://www.youtube.com/watch?v=dX3k_QDnzHE" alt = "square">
+                                    <area shape = "circle" coords = "350,200,150" href = "https://music.yandex.ru/album/15358644/track/82304736" alt = "circle">
+                                </map>
+                            </li>
+                            <li><a href="index.html">Относительная ссылка</a></li>
+                            <li><a href="about/about.html">Относительная ссылка на старницу в каталоге about</a></li>
+                            <li><a href="../index.html">Относительная ссылка уровнем выше</a></li>
+                            <li><a href="../../index.html">Относительная ссылка на 2 уровня выше</a></li>
+                            <li><a href="/">Сокращенная ссылка на главную</a></li>
+                            <li><a href="/srr.html">Сокращенная ссылка на внутреннюю</a></li>
+                        </ol>
+                </div>
+
+                
+                <div class="tables">
+                    <h1 id="table">Таблица</h1>
+                        <table>
+                            <div class="content-of-table">
+                                <tr>
+                                    <th>==Ячейка 1==</th>
+                                    <th>==Ячейка 2==</th>
+                                    <th>==Ячейка 3==</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.natgeotv.com/ru">natgeotv</a></td>
+                                    <td><a href="https://www.figma.com/files/recent?fuid=1153021823036082621">figma</a></td>
+                                    <td><a href="https://netology.ru/">netology</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><a href="https://www.ozon.ru/">ozone</a> </td>
+                                    <td rowspan="2"><a href="https://www.behance.net/galleries">behance</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://dribbble.com">dribble</a></td>
+                                    <td><a href="https://javarush.ru/quests/lectures/questsyntaxpro.level05.lecture02">javarush</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://youtube.com/">youtube</a></td>
+                                    <td><a href="https://mail.google.com/">gmail</a></td>
+                                    <td><a href="https://mail.ru/">mailru</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><a href="https://ya.ru/"> yandex </a></td>
+                                </tr>
+                            </div>
+                        </table>
+                </div> 
+                
+                <div class="formes">
+                    <h1 id="form">Форма</h1>
+                    <form action="/" method="POST">
+                        <div class="content-of-form">
+                            <label>
+                                Имя<br>
+                                <input name="field-name-1" value="Имя">
+                            </label><br>
+                    
+                            <label>
+                                email:<br>
+                                <input name="field-email" value="test@gmail.com" type="email">
+                            </label><br>
+                    
+                            <label>
+                                Дата рождения<br>
+                                <input name="field-date" value="2003-03-05" type="date">
+                            </label><br>
+                    
+                            Пол:<br> 
+                            <abel><input type="radio" name="radio-group-1" value="men">
+                                Мужчина</label><br>
+                            <label><input type="radio" checked="checked" name="radio-group-1" value="female">
+                                Женщина</label><br>
+                            <label><input type="radio" name="radio-group-1" value="other">
+                                Джедай</label><br>
+                    
+                            Сколько у вас конечностей?<br>
+                            <label><input type="radio" checked="checked" name="radio-group-2" value="1">
+                                1</label>
+                            <label><input type="radio" checked="checked" name="radio-group-2" value="2">
+                                2</label>
+                            <label><input type="radio" checked="checked" name="radio-group-2" value="3">
+                                3</label>
+                            <label><input type="radio" name="radio-group-2" value="4">
+                                4(норма)</label>
+                            <label><input type="radio" checked="checked" name="radio-group-2" value="5">
+                                5(перебор)</label>
+                            <br>
+                    
+                    
+                            <label>
+                                Выберите ваш любимый цвет
+                                <br>
+                                <select name="field-name-4[]" multiple="multiple">
+                                    <option value="color1" selected="selected">Черный</option>
+                                    <option value="color2">Белый</option>
+                                    <option value="color3">Оранжевый</option>
+                                    <option value="color3">Мятный</option>
+                                    <option value="color3">Синий</option>
+                                </select>
+                            </label><br>
+                    
+                            <label>
+                                Расскажите о себе:
+                                <br>
+                                <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Можно подробнее...)</textarea>
+                            </label><br>
+                    
+                            <label><input type="checkbox" checked="checked" name="check-1">
+                                Согласен(a)</label><br>
+
+                            <label>
+                                <input type="submit" name="submit" value="send">
+                            </label>   
+                        </div>    
+                    </form> 
+                </div>         
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer">
+            <div class="content">
+                <div class="footrow">
+                    <div class="footext">
+                        (c) Sidorenko Maksim 2022
+                    </div> 
+                </div>
+            </div>           
+        </footer>
+</body>
+</html>

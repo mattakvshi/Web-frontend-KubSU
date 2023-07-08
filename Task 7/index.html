@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Sidorenko_Laba 7</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    >
+    <link rel="package" href="package.json">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/calculator.js" defer></script>
+  </head>
+
+  <body>
+    <header class="mb-2">
+      <div class="container-lg">
+        <img class="mt-1" src="https://i.gifer.com/ZJtH.gif" alt="logo">
+        <div class="ht"><strong>mattakvshi.com</strong></div>
+      </div>
+    </header>
+
+    <section class="m-2">
+      <div class="container-lg">
+        <div class="сontainer__gallery p-2 mt-2 bg-light">
+          <h1 class="text-center" id="gallery" >Галерея</h1>
+          <div class="slider">
+            <div class="slider__item">
+              <img class="img-fluid" src="img/1.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/2.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/3.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/4.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/5.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/6.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/7.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/8.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/9.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/10.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/11.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/12.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/13.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/14.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/15.jpg" alt="Картиночка">
+            </div>
+            <div class="slider__item">
+              <img class="img-fluid" src="img/16.jpg" alt="Картиночка">
+            </div>
+          </div>
+        </div>
+          <div class="container__table bg-light p-2 mt-2 order-3 order-sm-2"> 
+            <h1 class="text-center" id="tablez">Курс валют</h1>
+            <table class="table table-bordered border-primary">
+              <tr class="td_name">
+                <th style="color: #99738E">Монета</th>
+                <th style="color: #99738E">Цена в долларах</th>
+                <th style="color: #99738E">Цена в рублях</th>
+              </tr>
+              <tr>
+                <td>Биткоин</td>
+                <td>1.62</td>
+                <td>100</td>
+              </tr>
+
+              <tr class="td_name">
+                <td colspan="3" class="text-center" style="color: #99738E" ><strong> Альткоины </strong></td>
+              </tr>
+
+              <tr>
+                <td>ETH</td>
+                <td>17.81</td>
+                <td>1100</td>
+              </tr>
+              <tr>
+                <td>TWT</td>
+                <td>24.29</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>BNB</td>
+                <td>32.38</td>
+                <td>2000</td>
+              </tr>
+
+              <tr class="td_name">
+                <td colspan="3" class="text-center" style="color: #99738E"><strong> Стейблкоины </strong></td>
+              </tr>
+
+              <tr>
+                <td>USDT</td>
+                <td>81.76</td>
+                <td>5050</td>
+              </tr>
+              <tr>
+                <td>USDC</td>
+                <td>89.05</td>
+                <td>5500</td>
+              </tr>
+              <tr>
+                <td>BUSD</td>
+                <td>105.24</td>
+                <td>6500</td>
+              </tr>
+
+            </table>
+          </div>
+        
+        <div class="сontainer__calc p-2 mt-2 bg-light">
+            <h1 class="text-center" id="calc">Расчёт стоимости</h1>
+            <h4>Тип товара:</h4>
+            <form>
+                <input type="text" id = "vibor" value="" placeholder="Количество">
+                <select name="type" id="select">    
+                    <option value="1" id="Vegetables">Биткоин</option>
+                    <option value="2" id="Fruits">Альткоины</option>
+                    <option value="3" id="Berries">Стейблкоины</option>
+                </select>
+                <div id="Bogema">
+                    <input type="radio" name="prodOptionz" id="whoiam"  onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked; ">
+                    <input type="radio" name="prodOptionz" value="Blueberry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"> ETH 
+                    <input type="radio" name="prodOptionz" value="Cherry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"> TWT 
+                    <input type="radio" name="prodOptionz" value="Dates" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"> BNB 
+                </div>  
+                <div id="Opachki">
+                    <input type="checkbox" name="Banana" id="Banana"> USDT 
+                    <input type="checkbox" name="Orange" id="Orange"> BUSD
+                    <input type="checkbox" name="Grape" id="Grape"> USDC      
+                </div>
+                <br>
+            </form>
+            <h2 id="price"></h2>    
+          </div>
+        </div>
+    </section>
+    <footer class="container_fluid d-flex justify-content-center align-items-center"> Сидоренко Максим 2022</footer>
+  </body>
+</html>

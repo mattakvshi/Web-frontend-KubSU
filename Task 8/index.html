@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Sidorenko8</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="popup__bg">
+        <form class="popup" id="form">
+          <p class="close-popup">X</p>
+          <div class="label__text">Имя</div>
+          <label>
+            <input id="inputName" type="text" name="name">
+          </label>
+          <div class="label__text">Почта</div>
+          <label>
+            <input id="inputEmail" type="email" name="tel">
+          </label>
+          <div class="label__text">Ваше сообщение</div>
+          <label>
+            <textarea id="inputMsg" name="message"></textarea>
+          </label>
+          <div class="form-group">
+            <div class="main-checkbox">
+              <input id="inputCB" type="checkbox">
+              <label for="inputCB"></label>
+            </div>
+            <span class="popup-checkbox__text">Принять соглашение.</span>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class ="centr">
+        <button class="btn">Открыть форму заполнения</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>ДЗ 1</title>
+    </head>
+    <body>
+      <h1>Упорядоченный список:</h1>
+      <ol>
+        <li><a href="http://kubsu.ru/" target="_blank">КубГУ</a></li>
+        <li><a href="https://kubsu.ru/" target="_blank">КубГУ(2)</a></li>
+        <li><a href="ftp://tavalik.ru/Temp/file.txt" target="_blank"> ссылку на файл на сервере FTP без авторизации</a></li>
+        <li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt" target="_blank"> ссылку на файл на сервере FTP c авторизацией</a></li>
+        <li><a href="https://test.html#bottom" target="_blank">Ссылка на часть страницы(якорь)</a></li>
+        <li><a href="#top">Ссылка на начало страницы</a></li>
+        <li><a href="https://github.com/?branch=master&repo=chat" target="_blank">Ссылка с двумя параметрами в URL</a></li>
+        <li><a href="#anchor">Начало страницы</a><a href="#">Главная</a></li>
+	    <li><a>Ссылка без href</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="https://test.com" rel="nofollow" target="_blank">Ссылка nofollow</a></li>
+	    <li><a href="https://test.com" rel="noindex" target="_blank">Ссылка noindex</a></li>
+        <li><h1>Пример абзаца для контекстной ссылки</h1>
+        <p>
+	          <a href="https://www.lipsum.com/feed/html" target="_blank">Бинанс</a> - это централизованная биржа. Как и в большинстве бирж, в бинансе есть своя валюта - BNB, при наличии которой у вас на спо товом аккаунте, вся коммисия при транзакциях будет взыматься именно в этой валюте, так ещё и с 25% скидкой.
+	        </p>
+	   </li>
+       <li><a href="https://avatars.mds.yandex.net/i?id=da0f054ca5ac170fb4aea09c8387e329-5221285-images-thumbs&n=13" target="_blank"><img src="https://mobimg.b-cdn.net/v3/fetch/fc/fc97db329bd4482025eaa1e3961dc80e.jpeg" alt="Котик" width="500" height="500"></a></li>
+       <li><label>Ссылки из прямоугольных и круглых областей картинки</label><br>
+            <img src = "https://github.com/IvanovAnton4682671/IvanovAnton4682671.github.io/blob/main/square.jpg?raw=true" alt="Квадрат" usemap = "#figura1" width ="500">
+            <map name = "figura1"><area shape = "rect" coords = "195,115,525,450" href = "https://www.kubsu.ru/" target="_blank" alt = "Красный квадрат"></map>
+            <img src = "https://github.com/IvanovAnton4682671/IvanovAnton4682671.github.io/blob/main/round.jpg?raw=true" alt="Круг" usemap = "#figura2" width ="500">
+            <map name = "figura2"><area shape = "circle" coords = "510,510,510" href = "https://example.com/"  target="_blank"  alt = "Розовый круг"></map>
+       </li>
+       <li><a href="demo.html" target="_blank">Относительная ссылка на файл в том же каталоге</a></li>
+       <li><a href="about/contacts.html" target="_blank">Относительная ссылка на файл в каталоге about</a></li>
+       <li><a href="./Веб-разработка(черновик).pdf" target="_blank">Относительная ссылка на файл в каталоге, выше нынешнего на один</a></li>
+       <li><a href="././random.html" target="_blank">Относительная ссылка на файл двумя каталогами выше</a></li>
+       <li><a href="/" target="_blank">Сокращенная ссылка на главную</a></li>
+       <li><a href="/form.html" target="_blank">Сокращенная на внутреннюю</a></li>     
+      </ol>
+        
+      <form action="/" method="POST">
+
+	    <label>
+	        Введите имя<br>
+	        <input name="field-name-1" value="Name">
+	    </label><br>
+
+	    <label>
+	        Введите email:<br>
+	        <input name="field-email" value="......@tuda-suda.com" type="email">
+	    </label><br>
+
+	    <label>
+	        Введите дату рождения<br>
+	        <input name="field-date" value="2022-02-22" type="date">
+	    </label><br>
+
+	    Введите пол:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        Мужской</label><br>
+	    <label><input type="radio" name="radio-group-1" value="Значение2">
+	        Женский</label><br>
+
+	    Выберите кол-во конечностей:<br>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+	        1</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+	        2</label>
+	    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+	        3</label>
+	    <label><input type="radio" name="radio-group-1" value="Значение4">
+	        4</label>
+	    <label><input type="radio" name="radio-group-1" value="Значениие 5">
+	        Больше 4х</label><br>
+
+	    <label>
+	        Сверхспособности:
+	        <br>
+	        <select name="field-name-4[]" multiple="multiple">
+	            <option value="Значение1">Бессмертие</option>
+	            <option value="Значение2" selected="selected">Левитация</option>
+	            <option value="Значение3" selected="selected">Прохождение сквозь стены</option>
+	        </select>
+	    </label><br>
+
+	    <label>
+	        Биография:
+	        <br>
+	        <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px;">Напишите что-то о себе</textarea>
+	    </label><br>
+
+	    <label><input type="checkbox" checked="checked" name="check-1">
+	        с контрактом ознакомлен (а)</label><br>
+
+	    <input type="submit" value="Отправить">
+	</form>
+    </body>
+</html>

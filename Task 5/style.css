@@ -1,0 +1,211 @@
+html{
+    scroll-behavior: smooth;   
+}
+
+body{
+    background: linear-gradient(-45deg, #EAE7DC, #EAE7DC, #EAE7DC, #EAE7DC);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+header img{
+    float:left;
+    height:100px;
+    width:100px;
+}
+
+header{
+    color: #EAE7DC;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2); 
+    background-color:#E98074;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.ht{
+    text-align: center;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conURLS{
+    color:  #8E8D8A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem; 
+}
+
+.conURLS a{
+    color:  #D8C3A5;
+    text-decoration: none;
+}
+
+.conURLS a:hover{
+    text-decoration: none;
+    color: #D8C3A5;
+    background: linear-gradient(to left, #E85A4F, #E98074 50%, #D8C3A5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.ol{
+    list-style: none;
+    text-align: center;
+}
+
+.container-lg{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+.nav-item a{
+    font-size: 30px;
+    background-color:  #EAE7DC;
+    color:  #8E8D8A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+.nav-item a:hover{
+    text-decoration: none;
+    color: #8E8D8A;
+    background: linear-gradient(to left, #E85A4F, #E98074 50%, #8E8D8A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+
+.container__table{
+    color: #8E8D8A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+}
+
+table,th,td{
+    border: none;
+}
+tbody tr:nth-child(odd){
+    background-color: #EAE7DC;
+}
+tbody tr:nth-child(even){
+    background-color: #E98074;
+}
+
+.container__form{
+    color: #8E8D8A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem; 
+}
+
+.сontainer__calc{
+    color: #8E8D8A;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem; 
+}
+
+.boarding{
+    height: 50px;
+	padding: 0px 0px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 40px;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.floating-button:hover {
+    background: #e98074;
+    box-shadow: 0 15px 20px rgba(233, 128, 116, .7);
+    color: white;
+    transform: translateY(-7px);
+}
+
+footer{
+    background-color:#E98074; 
+    height: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+    .ht{
+        font-size:350%;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+
+    .ht{
+        font-size:300%;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .ht{
+        font-size:250%;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .ht{
+        font-size:200%;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    .ht{
+        font-size:150%;
+    }
+
+}
